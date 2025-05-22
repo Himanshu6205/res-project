@@ -1,26 +1,59 @@
-/* src/components/FoodList.module.css */
+/* FoodList.css */
 
-.foodList {
+.food-list {
   max-width: 600px;
-  margin: 2rem auto 0 auto; /* add space below the summary */
+  margin: 2rem auto 0 auto;
 }
 
-.foodItem {
+.food-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background: #fff;
   border-bottom: 1px solid #ccc;
   padding: 1rem;
 }
 
-.foodTitle {
+.food-title {
   margin: 0 0 0.5rem 0;
 }
 
-.foodDesc {
+.food-desc {
   font-style: italic;
   margin: 0 0 0.5rem 0;
 }
 
-.foodPrice {
+.food-price {
   font-weight: bold;
   color: #b94517;
+}
+
+.food-actions {
+  text-align: right;
+}
+
+.food-amount-label {
+  display: block;
+  font-weight: bold;
+}
+
+.food-amount-input {
+  width: 60px;
+  padding: 0.25rem;
+  margin: 0.25rem 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.add-button {
+  display: block;
+  width: 100%;
+  background-color: #8a2b06;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
 }
