@@ -1,0 +1,26 @@
+/* src/components/FoodList.module.css */
+
+.foodList {
+  max-width: 600px;
+  margin: 2rem auto 0 auto; /* add space below the summary */
+}
+
+.foodItem {
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+  padding: 1rem;
+}
+
+.foodTitle {
+  margin: 0 0 0.5rem 0;
+}
+
+.foodDesc {
+  font-style: italic;
+  margin: 0 0 0.5rem 0;
+}
+
+.foodPrice {
+  font-weight: bold;
+  color: #b94517;
+}
