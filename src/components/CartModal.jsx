@@ -1,15 +1,8 @@
 import React from "react";
 import "./CartModal.css";
 
-const CartModal = () => {
-  const cartItems = [
-    {
-      id: "m1",
-      title: "Sushi",
-      amount: 2,
-      price: 22.99,
-    },
-  ];
+const CartModal = ({ onClose }) => {
+  const cartItems = [{ id: "m1", title: "Sushi", amount: 2, price: 22.99 }];
 
   const totalAmount = cartItems
     .reduce((acc, item) => acc + item.amount * item.price, 0)
@@ -36,7 +29,9 @@ const CartModal = () => {
           <span>${totalAmount}</span>
         </div>
         <div className="actions">
-          <button className="button--alt">Close</button>
+          <button className="button--alt" onClick={onClose}>
+            Close
+          </button>
           <button className="button">Order</button>
         </div>
       </div>
