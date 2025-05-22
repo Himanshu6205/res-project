@@ -1,0 +1,31 @@
+.navbar {
+  background-color: brown;
+  display: flex;
+  justify-content: space-between; /* More common than space-around for navbars */
+  align-items: center;
+  padding: 10px 20px;
+  color: white;
+}
+
+.heading {
+  font-size: 1.5rem;
+}
+
+.cart-sec {
+  border: solid rgb(179, 68, 68) 2px;
+  padding: 10px 15px;
+  margin: 15px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 8px; /* spacing between text and cart number */
+}
+
+.cart-num {
+  background-color: white;
+  color: brown;
+  padding: 2px 8px;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
