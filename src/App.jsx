@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import "./App.css";
 import ResMain from "./components/ResMain";
 import FoodList from "./components/Foodlist";
+import CartModal from "./components/CartModal";
 
 function App() {
   const DUMMY_MEALS = [
@@ -26,6 +27,7 @@ function App() {
     <>
       <Navbar />
       <ResMain />
+      <CartModal />
       <FoodList meals={DUMMY_MEALS} />
     </>
   );

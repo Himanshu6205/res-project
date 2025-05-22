@@ -15,7 +15,7 @@ const FoodItem = ({ meal }) => {
   const [amount, setAmount] = useState(1);
 
   const handleAdd = () => {
-    alert(`Added ${amount} x ${meal.title}`);
+    console.log(`Added ${amount} x ${meal.title}`);
   };
 
   return (
